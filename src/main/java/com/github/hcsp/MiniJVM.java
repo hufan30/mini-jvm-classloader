@@ -30,7 +30,8 @@ public class MiniJVM {
     private MiniJVMClassLoader appClassLoader;
 
     public static void main(String[] args) throws ClassNotFoundException {
-        new MiniJVM("target/classes", "com.github.hcsp.demo.SameClassLoaderClass").start();
+//        new MiniJVM("target/classes", "com.github.hcsp.demo.SameClassLoaderClass").start();
+        new MiniJVM("target/classes", "com.github.hcsp.demo.SimpleClass").start();
     }
 
     /**
