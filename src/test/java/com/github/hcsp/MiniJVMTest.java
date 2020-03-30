@@ -16,6 +16,6 @@ public class MiniJVMTest {
     @CaptureSystemOutput
     public void instanceOfClassTest(CaptureSystemOutput.OutputCapture capture) throws Exception {
         capture.expect(Matchers.containsString("false"));
-        new MiniJVM(classPath, "com.github.hcsp.InstanceofClass").start();
+        new MiniJVM(classPath, "com.github.hcsp.demo.InstanceofClass").start();
     }
 }
