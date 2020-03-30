@@ -79,7 +79,7 @@ public class MiniJVMClassLoader {
         return defineClass(className, bytes);
     }
 
-    private MiniJVMClass defineClass(String className, byte[] bytes) {
+    protected MiniJVMClass defineClass(String className, byte[] bytes) {
         return new MiniJVMClass(className, this, new ClassFileParser().parse(bytes));
     }
 
